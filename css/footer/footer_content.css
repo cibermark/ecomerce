@@ -1,0 +1,139 @@
+
+.footer_content{
+    background: #EAF2FD;
+ 
+}
+
+
+ .footer_content .footer_contact {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 16px 10%; 
+   
+}
+
+.footer_logo_info{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+
+    
+}
+
+.footer_logo img{
+    cursor: pointer;
+}
+
+
+
+.footer_logo_info .footer_ul{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.footer_logo_info .footer_ul .footer_item{
+    padding-bottom: 16px;
+    list-style: none;
+    transition: .1s ease-in-out;
+    
+}
+
+.footer_item:hover{
+    transform: scale(1.1);
+}
+
+.footer_logo_info .footer_ul .footer_item .footer_link{
+    text-decoration: none;
+    color:black;
+    font-size: 1.4rem;
+    
+}
+
+.footer_logo_info .footer_ul .footer_item .footer_link:hover{
+    color: var(--main-color);
+   
+    
+}
+
+.btn_contacto{
+    color: #FFFFFF;
+    width: 144px;
+    height: 51px;
+    background: #2A7AE4;
+    border-style: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.btn_contacto:hover{
+    background: #D4E4FA;
+    color: var(--main-color);
+    outline: 1px solid var(--main-color);
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:1280px){
+    .footer_contact{
+        padding: 16px 5%;
+    }
+}
+@media screen and (max-width:768px){
+    .footer_contact{
+        padding: 16px 5%;
+    }
+    .footer_logo_info{
+        width: 30%;
+        flex-direction: column;
+        gap: 0;
+    }
+   
+}
+
+@media screen and (max-width:600px){
+
+    .footer_contact {
+        flex-direction: column;
+       
+    }
+
+    .footer_logo_info{
+        width: 100%;
+        align-items: center;
+    }
+}
+
+
+
+
+@media screen and (max-width:360px){
+    
+    .footer_contact{
+        flex-direction: column;
+    }
+    
+    
+    .menu_contacto__box{
+        width: 100%;
+        align-items: center;
+    }
+  
+
+    .footer_logo_info .footer_ul{
+        align-items: center;
+        padding-bottom: 16px;
+    }
+
+    .footer_logo{
+        padding-bottom: 16px;
+    }
+
+
+}

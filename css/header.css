@@ -1,0 +1,14 @@
+header{
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    align-items: center ;
+    padding:2rem 9%;
+    background-color: var(--bg-color);
+    z-index: 120;
+
+    justify-content: space-evenly;
+}

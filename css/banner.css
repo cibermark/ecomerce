@@ -1,0 +1,103 @@
+section.banner{
+    width: 100vw;
+    height: 45vh;
+    background-image: url(../img/banner-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+   
+}
+
+.banner_content{
+    /* outline: 1px solid palevioletred; */
+    width: 80%;
+    height: 30vh;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: end;
+    
+}
+
+.banner_title{
+    font-size: 5.2rem;
+    color: var(--text-title);
+    /* outline: 1px solid green; */
+    
+   
+}
+
+.banner_description{
+    color: var(--text-title);
+    font-size: 2.2rem;
+    font-weight: 400;
+    /* outline: 1px solid green; */
+
+}
+
+.banner_btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background:var(--main-color);
+    /* border-radius: 4rem; */
+    box-shadow: 0 0  1rem var(--main-color);
+    font-size: 1.6rem;
+    color:var(--second-bg-color);
+    letter-spacing:.1rem;
+    font-weight: 300;
+    transition:.5s ease;
+    text-decoration: none;
+    width: 159px;
+}
+
+.banner_btn:hover{
+    box-shadow:none;
+
+}
+
+@media screen and (max-width:705px){
+
+
+    .banner_content{
+        gap: 2rem;
+    }
+
+   .banner_title{
+    font-size: 4.3rem;
+    line-height: 3.9rem;
+   }
+
+   .banner_description{
+    font-size: 1.8rem;
+   }
+
+  
+}
+
+
+
+@media screen and (max-width:425px){
+
+    .banner_content{
+        gap: 1rem;
+    }
+ 
+
+   .banner_title{
+    font-size: 3.8rem;
+    line-height: 3.9rem;
+   }
+
+   .banner_description{
+    font-size: 1.8rem;
+   }
+
+   .banner_btn{
+    font-size: 1.4rem;
+   }
+}

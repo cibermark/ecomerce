@@ -1,0 +1,22 @@
+
+.header_img{
+    transition: .1s ease-in;
+}
+
+@media screen and (max-width:768px){
+    header a{
+        width: 20%;
+    }
+   
+    .header_img{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:400px){
+
+    header a {
+        min-width: 120px;
+    }
+}

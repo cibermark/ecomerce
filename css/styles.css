@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bg-color: white;
+    --second-bg-color: rgba(234, 242, 253, 1);;
+    --text-color:black;
+    --main-color:rgba(42, 122, 228, 1);
+    --text-title:white;
+
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    
+}

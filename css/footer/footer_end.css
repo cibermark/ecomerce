@@ -1,0 +1,13 @@
+.footer_end{
+    height: 70px;
+    padding-top: 32px
+}
+
+.footer_end .footer_end-title{
+    color: #464646;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}

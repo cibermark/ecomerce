@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/header/header_img.css">
+    <link rel="stylesheet" href="css/header/header_search.css">
+    <link rel="stylesheet" href="css/header/header_btn.css">
+      <link rel="stylesheet" href="css/formAddPRoduct/formulario_add.css">
+      <link rel="stylesheet" href="css/loggin_formulario/formulario.css">
+  
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/footer/footer_content.css">
+    <link rel="stylesheet" href="css/footer/footer_form.css">
+    <link rel="stylesheet" href="css/footer/footer_end.css">
+    
+    <title>Ecomerce challenge - part edit products</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="img/Logo (1).png" alt="alura" class="header_img"></a>
+        <div class="header_search">
+            <input type="search" placeholder="¿que desea buscar?" class="search_input">
+            <button  class="search_button" type="submit"><ion-icon name="search-outline" class="search_icon"></ion-icon></button>
+        </div>
+        <button class="header_loggin" onclick="location.href =`agrega_productos.html`">Menu Administrador</button>
+    </header>
+
+   <main class="formulario_main content">
+        <form action="#" class="formulario_contendor left" data-form>
+            <fieldset>
+                <legend class="title_addProducto">Editar producto</legend>
+            
+            <!-- carga de imagen -->
+            <div class="agregar__form__imagen">
+                <div class="agregar__imagen-div" id="box__imagen"></div>
+                <label for="input__imagen" class="input__image-label"> Elegir archivo</label>
+                <input type="file" class="agregar__imagen input" id="input__imagen" data-input="imagen_agregar_producto" accept="image/*">
+            </div>
+            <!-- error de no cargar imagen -->
+            <div class="falta__carga__archivo">
+                <span class="mensaje__error archivo__faltante">Debe seleccionar un archivo de imagen para cargar en el producto</span>
+            </div>
+
+            <div class="formulario_input-container top_limit">
+                <input name="categoria" id="categoria" class="input" type="text" placeholder="Categoria" required data-tipo="categoria">
+                <label class="input-label" for="categoria"></label>
+                
+            </div>
+            <div class="formulario_input-container">
+                <input name="nombreProducto" id="nombreProducto" class="input" type="text" placeholder="Nombre del producto" required data-tipo="nombre_prod">
+                <label class="input-label" for="nombreProducto"></label>
+                
+            </div>
+            <div class="formulario_input-container">
+                <input name="precioProducto" id="precioProducto" class="input" type="text" placeholder="Precio del producto" required data-tipo="precio_prod">
+                <label class="input-label" for="precioProducto"></label>
+                
+            </div>
+            <div class="formulario_input-container">
+                <textarea name="descripcionProducto" id="descripcionProducto" class="input_descripcion" type="text" placeholder="Descripción del producto" required data-tipo="descripcion_prod" style="resize: none;"> </textarea>
+                <label class="input-label" for="descripcionProducto"></label>
+                
+            </div>
+        </fieldset>
+        <button type="submit" class="add_btn">Guardar Cambios</button>
+        </form>
+   </main>
+
+   
+ 
+    
+    <footer>
+        <section class="footer_content">
+            <div class="footer_contact">
+                <div class="footer_logo_info">
+                    <div class="footer_logo">
+                        <img src="img/Logo (1).png" alt="logo" id="img">
+                    </div>
+                    <ul class="footer_ul">
+                        <li class="footer_item"><a class="footer_link" href="#">Quienes somos</a></li>
+                        <li class="footer_item"><a class="footer_link" href="#">Política de privacidad</a></li>
+                        <li class="footer_item"><a class="footer_link" href="#">Programa de fidelidad</a></li>
+                        <li class="footer_item"><a class="footer_link" href="#">Nuestras Tiendas</a></li>
+                        <li class="footer_item"><a class="footer_link" href="#">Quiero ser franquiciado</a></li>
+                        <li class="footer_item"><a class="footer_link" href="#">Anúncie aquí</a></li> 
+                    </ul>
+                </div>
+            
+                <div class="footer_form">
+                    <form action="#" >
+                        <fieldset>
+                            <legend class="form_title">Hable con nosotros</legend>
+                            <!-- <label for="nombre"></label> -->
+                            <input class="input_nombre" type="text" placeholder="Nombre" required data-tipo="nombre" pattern="[\s\S]{4,40}">
+                            <!-- <label for="mensaje"></label> -->
+                            <textarea  class="input_mensaje" type="text" placeholder="Escribe tu mensaje" required data-tipo="mensaje" pattern="[\s\S]{5,120}" ></textarea>
+                        </fieldset>
+                        <button class="btn_contacto">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="footer_end">
+            <h4 class="footer_end-title">Desarrollado por Marco Rios 2023</h4>  
+        </div>
+    </footer>
+
+    <script src="js/edit_product.js" type="module"></script>
+
+    <!-- search btn -->
+    <script src="js/search_btn.js"></script>
+
+
+    <!-- <script src="js/loggin.js"></script> -->
+    <!-- iconoos -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

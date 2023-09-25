@@ -1,0 +1,22 @@
+.consolas .consolas_principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1.6rem 10%;
+    
+}
+
+.consolas .consolas_description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:  1.6rem;
+    margin: 0 auto;
+    padding: 32px 10%;
+    flex-wrap: wrap;
+}
+
+.consolas {
+    padding-bottom: 1.6rem;
+}

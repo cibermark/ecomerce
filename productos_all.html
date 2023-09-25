@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/header/header_img.css">
+    <link rel="stylesheet" href="css/header/header_search.css">
+    <link rel="stylesheet" href="css/header/header_btn.css">
+    <link rel="stylesheet" href="css/allProducts/Products_main.css">
+    <link rel="stylesheet" href="css/allProducts/all_products.css">
+    <link rel="stylesheet" href="css/allProducts/product_box.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/footer/footer_content.css">
+    <link rel="stylesheet" href="css/footer/footer_form.css">
+    <link rel="stylesheet" href="css/footer/footer_end.css">
+    
+    <title>Ecomerce challenge</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="img/Logo (1).png" alt="alura" class="header_img"></a>
+        <div class="header_search">
+            <input type="search" placeholder="¿que desea buscar?" class="search_input">
+            <button  class="search_button" type="submit"><ion-icon name="search-outline" class="search_icon"></ion-icon></button>
+        </div>
+        <!-- <button class="header_loggin">Loggin</button> -->
+    </header>
+
+    <!-- banner -->
+
+   
+    <!-- main form _loggin-->
+    <main class="prodcuts_main">
+       <section class="all_products">
+            <div class="productos_title">
+                <h2 class="title_full__productos">Todos los productos</h2>
+            </div>
+            <div class="articulos_descripcion" data-producto>
+            
+       </section>
+    </main>
+    
+    <footer>
+        <section class="footer_content">
+            <div class="footer_contact">
+                <div class="footer_logo_info">
+                    <div class="footer_logo">
+                        <img src="img/Logo (1).png" alt="logo" id="img">
+                    </div>
+                    <ul class="footer_ul">
+                        <li class="footer_item"><a class="footer_link" href="#">Quienes somos</a></li>
+                        <li class="footer_item"><a class="footer_link" href="#">Política de privacidad</a></li>
+                        <li class="footer_item"><a class="footer_link" href="#">Programa de fidelidad</a></li>
+                        <li class="footer_item"><a class="footer_link" href="#">Nuestras Tiendas</a></li>
+                        <li class="footer_item"><a class="footer_link" href="#">Quiero ser franquiciado</a></li>
+                        <li class="footer_item"><a class="footer_link" href="#">Anúncie aquí</a></li> 
+                    </ul>
+                </div>
+            
+                <div class="footer_form">
+                    <form action="#" >
+                        <fieldset>
+                            <legend class="form_title">Hable con nosotros</legend>
+                            <!-- <label for="nombre"></label> -->
+                            <input class="input_nombre" type="text" placeholder="Nombre" required data-tipo="nombre" pattern="[\s\S]{4,40}">
+                            <!-- <label for="mensaje"></label> -->
+                            <textarea  class="input_mensaje" type="text" placeholder="Escribe tu mensaje" required data-tipo="mensaje" pattern="[\s\S]{5,120}" ></textarea>
+                        </fieldset>
+                        <button class="btn_contacto">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="footer_end">
+            <h4 class="footer_end-title">Desarrollado por Marco Rios 2023</h4>  
+        </div>
+    </footer>
+
+    <!-- link a index -->
+    <script src="js/loggin.js"></script>
+    <!-- all products creator -->
+    <script src="js/allProducts.js" type="module"></script>
+
+     <!-- search btn -->
+     <script src="js/search_btn.js"></script>
+
+    <!-- <script src="js/loggin.js"></script> -->
+    <!-- iconoos -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
